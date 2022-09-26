@@ -1,0 +1,106 @@
+.header {
+    position: absolute;
+    width: 1440px;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+}
+
+.container-logo{
+    background: #32B768;
+}
+
+.logo{
+    padding: 5px;
+}
+
+.logo-img{
+    position: absolute;
+    width: 75px;
+    height: 76px;
+    left: 215px;
+    top: 106px;
+
+}
+
+.subtitle{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: left
+}
+
+.logo-app{
+    position: absolute;
+    width: 525px;
+    height: 562px;
+    left: 853px;
+    top: -2px;
+}
+
+.container-news {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      ". . .";
+
+      margin-left: 10px;
+      margin-right: 10px;
+}
+
+.card-news{
+    background-color: #F0F0F5;
+    margin-left: 10px;
+    margin-right: 10px;
+
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-radius: 10px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.title-news {
+    color: #207342;
+    font-size: 24;
+    font-weight: bold;
+}
+
+.description-news {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    text-align: justify; 
+    color: #000;
+}
+
+.footer{
+    position: absolute;
+    width: 1439px;
+    height: 44px;
+    left: 1px;
+    top: 980px;
+    background:#F0F0F5;
+}
+
+.copyright{
+    position: absolute;
+    width: 1437px;
+    height: 39px;
+    left: 1px;
+    top: 995px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    color: #000000;
+
+}
