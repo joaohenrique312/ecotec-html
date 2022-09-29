@@ -5,7 +5,7 @@ html{
 
 .container{
     background-color: #32B768;
-    width: 1240px;
+    width: 1440px;
     height: 600px;
     margin-left: -10px;
     margin-right: -40px;
@@ -14,7 +14,7 @@ html{
 
 .coluna{
     float: left;
-    left: 400px;
+    left: 500px;
     width: 950px;
     height: 600px;
     position: absolute;
@@ -22,13 +22,13 @@ html{
 
 .mobile{
     float:left;
-    left: 400px; 
+    left: 450px; 
     position: relative;
 }
 
 
 .icon{
-    right: 440px;
+    right: 540px;
     position: relative;
     width: 223px;
     height: 60px;
@@ -134,7 +134,7 @@ footer{
     box-sizing: border-box;
 
     position: absolute;
-    width: 1345px;
+    width: 1440px;
     height: 44px;
     left: 1px;
     top: 980px;
