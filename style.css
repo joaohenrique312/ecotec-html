@@ -1,17 +1,68 @@
+html{
+    background-color: white;
+}
+
+
 .container{
     background-color: #32B768;
+    width: 1240px;
+    height: 600px;
+    margin-left: -10px;
+    margin-right: -40px;
+    margin-top: -20px;
+}
+
+.coluna{
+    float: left;
+    left: 400px;
+    width: 950px;
+    height: 600px;
+    position: absolute;
+}
+
+.mobile{
+    float:left;
+    left: 400px; 
+    position: relative;
 }
 
 
-textarea:focus, input:focus {
-    box-shadow: 0 0 0 0;
-    outline: 0;
+.icon{
+    right: 440px;
+    position: relative;
+    width: 223px;
+    height: 60px;
+    top: 100px;
+    float: right;
 }
 
-a{
-    width: 250px;
-    height: 153px;
+.name{
+    position: absolute;
+    width: 223px;
+    height: 60px;
+    right: 423px;
+    top: 100px;
+    float: right;
 }
+
+.download{
+    position: absolute;
+    width: 417px;
+    height: 51px;
+    left: 157px;
+    top: 323px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+
 
 .container-news {
     width: 430px;
@@ -80,14 +131,17 @@ img {
 }
 
 footer{
-    max-width: 100%; 
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1345px;
     height: 44px;
     left: 1px;
     top: 980px;
-    gap: 0px; 
-    border: none;
-
+    
     background: #F0F0F5;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .brand{
