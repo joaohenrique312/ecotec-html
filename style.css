@@ -1,54 +1,23 @@
-.header {
-    position: absolute;
-    width: 1440px;
-    height: 600px;
-    left: 0px;
-    top: 0px;
+.container{
+    background-color: #32B768;
 }
 
-.container-logo{
-    background: #32B768;
-}
-
-.logo{
-    padding: 5px;
-}
-
-.logo-img{
-    position: absolute;
-    width: 75px;
-    height: 76px;
-    left: 215px;
-    top: 106px;
-
-}
-
-.subtitle{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: left
-}
-
-.logo-app{
-    position: absolute;
-    width: 525px;
-    height: 562px;
-    left: 853px;
-    top: -2px;
+a{
+    width: 250px;
+    height: 153px;
 }
 
 .container-news {
+    width: 430px;
+    height: 360px;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr; 
-    gap: 0px 0px; 
+    gap: 10px 50px; 
     grid-template-areas: 
       ". . .";
 
-      margin-left: 10px;
+      margin-left: 0px;
       margin-right: 10px;
 }
 
@@ -65,42 +34,58 @@
 }
 
 .title-news {
+
+    font-family: 'Roboto';
     color: #207342;
-    font-size: 24;
-    font-weight: bold;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+}
+
+img {
+    width: auto; 
+    max-height: 100%; 
+    object-fit: contain;
+}
+
+.news{
+    width: 360px;
+    height: 140px;
+    margin: auto;
+    display: block;
 }
 
 .description-news {
+
+    width: 370px;
+    height: 90px;
+    left: 70px;
+    top: 834px;
+    
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 15px;
-    line-height: 18px;
+    line-height: 28px;
     text-align: justify; 
     color: #000;
 }
 
-.footer{
-    position: absolute;
-    width: 1439px;
+footer{
+    max-width: 100%; 
     height: 44px;
     left: 1px;
     top: 980px;
-    background:#F0F0F5;
+    gap: 0px; 
+
+    background: #F0F0F5;
 }
 
-.copyright{
-    position: absolute;
-    width: 1437px;
-    height: 39px;
-    left: 1px;
-    top: 995px;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
+.brand{
+    width: 100%;
+    height: 30px;
     font-size: 14px;
-    line-height: 16px;
     text-align: center;
-    color: #000000;
-
 }
