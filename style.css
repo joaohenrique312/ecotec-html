@@ -1,33 +1,52 @@
-html{
+html, body{
+    margin: 0px;
+    padding: 0px;
     background-color: white;
 }
 
 
 .container{
+    display: flex;
+    flex-wrap: wrap;
+
     background-color: #32B768;
     width: 100%;
-    height: 600px;
-    margin-left: -10px;
-    margin-right: -40px;
-    margin-top: -20px;
+    min-height: 600px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.content p {
+    
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #F0F0F5;
 }
 
 .coluna{
-    display: flex;
-    justify-content: stretch;
-    width: 950px;
-    height: 600px;
+    margin-left:  10px;
+    float: right;
+    width: 920px;
+    height: auto;
+    background:url(element\ site\ 1.png);
 }
 
 .mobile{
-    float:left;
-    left: 450px; 
-    position: relative;
+    width: 525px;
+    height: 562px;
+    float: right;
 }
-
 
 .icon{
-    right: 540px;
+    right: 530px;
     position: relative;
     width: 223px;
     height: 60px;
@@ -35,25 +54,17 @@ html{
     float: right;
 }
 
+
 .name{
-    position: absolute;
     width: 223px;
     height: 60px;
-    right: 423px;
-    top: 100px;
-    float: right;
 }
 
 .download{
-    position: absolute;
     width: 417px;
     height: 51px;
-    left: 157px;
-    top: 323px;
-    
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -61,26 +72,17 @@ html{
     color: #FFFFFF;
 }
 
-
-
 .container-news {
-    width: 430px;
-    height: 360px;
-    display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 10px 50px; 
-    grid-template-areas: 
-      ". . .";
-
-      margin-left: 0px;
-      margin-right: 10px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .card-news{
     background-color: #F0F0F5;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 10px 10px 20px 10px;
 
     padding-left: 10px;
     padding-right: 10px;
@@ -91,11 +93,9 @@ html{
 
 .title-news {
 
-    font-family: 'Roboto';
+    font-family: 'Roboto', sans-serif;
     color: #207342;
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+    font-weight: bolder;
     font-size: 24px;
     line-height: 28px;
 }
@@ -110,19 +110,16 @@ img {
     width: 360px;
     height: 140px;
     margin: auto;
-    display: block;
+    display: flex;
 }
 
 .description-news {
 
     width: 370px;
-    height: 90px;
-    left: 70px;
-    top: 834px;
+    height: auto;
     
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
     font-size: 15px;
     line-height: 28px;
     text-align: justify; 
@@ -132,11 +129,9 @@ img {
 footer{
     box-sizing: border-box;
 
-    position: absolute;
-    width: 1440px;
-    height: 44px;
-    left: 1px;
-    top: 980px;
+    display: flex;    
+    width: 100%;
+    height: auto;
     
     background: #F0F0F5;
     border: 1px solid #000000;
@@ -148,4 +143,35 @@ footer{
     height: 30px;
     font-size: 14px;
     text-align: center;
+}
+
+
+
+@media screen and (max-width: 700px) {
+    .content{
+        margin-left:  3px;
+        float:left;
+        display:flex;
+        justify-content: flex-start;
+
+    }
+
+    .content p{
+        font-weight: 200;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+
+    }
+
+    .coluna {
+        background: none;
+    }
+    .mobile{
+        display: flex;
+        width: 370px;
+        height: 320px;
+        align-items: flex-start;
+        flex-direction: column;
+    }
 }
