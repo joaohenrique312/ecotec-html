@@ -6,6 +6,10 @@ body{
     background-color: white;
 }
 
+header{
+    display: flex;
+}
+
 
 .container{
     display: flex;
@@ -62,6 +66,7 @@ body{
     
     color: #FFFFFF;
 }
+
 
 main{
     display: flex;
@@ -153,6 +158,11 @@ footer p{
         margin: 0px;
         padding: 0px;
         background-color: white;
+    }
+
+    header{
+        width: fit-content;
+        height: auto;
     }
     
 
